@@ -10,6 +10,7 @@ import './styles/global.scss';
 import './styles/sidebar.scss';
 import './styles/content.scss';
 import { Content } from './components/Content';
+import { Header } from './components/Header';
 
 interface GenreResponseProps {
   id: number;
@@ -48,9 +49,7 @@ export function App() {
       <SideBar selectedGenreId={selectedGenreId} setSelectedGenreId={setSelectedGenreId}/>
 
       <div className="container">
-        <header>
-          <span className="category">Categoria:<span> {selectedGenre.title}</span></span>
-        </header>
+        <Header selectedGenre={selectedGenre}/>
 
         <Content movies={movies} />
       </div>
