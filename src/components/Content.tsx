@@ -1,3 +1,5 @@
+import '../styles/content.scss';
+
 import { MovieCard } from './MovieCard';
 
 interface Movie {

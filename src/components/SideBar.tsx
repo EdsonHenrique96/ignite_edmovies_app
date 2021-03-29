@@ -1,8 +1,9 @@
-import { Button } from './Button';
-
 import { useEffect, useState } from "react";
+
+import { Button } from './Button';
 import { api } from "../services/api";
 
+import '../styles/sidebar.scss';
 interface GenreResponse {
   id: number;
   name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
