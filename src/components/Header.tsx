@@ -1,12 +1,9 @@
 import '../styles/header.scss';
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
+
+import { GenreResponse } from '../models';
 
 interface HeaderProps {
-  selectedGenre: GenreResponseProps; 
+  selectedGenre: GenreResponse; 
 }
 
 export function Header({ selectedGenre }: HeaderProps) {
