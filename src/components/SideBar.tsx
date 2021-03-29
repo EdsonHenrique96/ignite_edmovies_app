@@ -3,13 +3,9 @@ import { useEffect, useState } from "react";
 import { Button } from './Button';
 import { api } from "../services/api";
 
-import '../styles/sidebar.scss';
-interface GenreResponse {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
+import { GenreResponse } from '../models';
 
+import '../styles/sidebar.scss';
 interface SideBarProps {
   selectedGenreId: number;
   setSelectedGenreId: (id: number) => void;

@@ -1,17 +1,9 @@
 import '../styles/content.scss';
 
+import { Movie } from '../models';
+
 import { MovieCard } from './MovieCard';
 
-interface Movie {
-  imdbID: string;
-  Title: string;
-  Poster: string;
-  Ratings: Array<{
-    Source: string;
-    Value: string;
-  }>;
-  Runtime: string;
-}
 interface ContentProps {
   movies: Movie[];
 }
